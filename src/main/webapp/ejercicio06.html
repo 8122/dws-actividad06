@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ejercicio 06</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="#BDBDBD">
+        <form name="formulario" action="mailto:tienda@gmail.com" method="POST" enctype="text/plain">
+            <table border="0" width="600" cellspacing="3" cellpadding="3" bgcolor="#848484" align="center">
+                <thead>
+                    <tr>
+                        <th colspan="4" style="color:white" valign="middle" bgcolor="#0000FF"><font face="sans-serif" size="4">P R O D U C T O S</font></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td bgcolor="#58ACFA"><img src="img/televisor.png" alt="televisor" width="150" height="150"/></td>
+                        <td bgcolor="#58ACFA"><img src="img/cadena_musica.png" alt="televisor" width="150" height="150"/></td>
+                        <td bgcolor="#58ACFA"><img src="img/frigorifico.png" alt="televisor" width="150" height="150"/></td>
+                        <td bgcolor="#58ACFA"><img src="img/vitroceramica.png" alt="televisor" width="150" height="150"/></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input type="checkbox" name="televisor" value="ON" /></td>
+                        <td align="center"><input type="checkbox" name="cadena_musica" value="ON" /></td>
+                        <td align="center"><input type="checkbox" name="frigorifico" value="ON" /></td>
+                        <td align="center"><input type="checkbox" name="vitroceramica" value="ON" /></td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#BDBDBD">Unidades: <select name="unidadesTelevidor">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </td>
+                        <td align="center" bgcolor="#BDBDBD">Unidades: <select name="unidadesCadenaMusica">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </td>
+                        <td align="center" bgcolor="#BDBDBD">Unidades: <select name="unidadesFrigorifico">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </td>
+                        <td align="center" bgcolor="#BDBDBD">Unidades: <select name="unidadesVitroceramica">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" style="color:white" bgcolor="#0000FF"><font face="sans-serif" size="4">FORMA DE PAGO</font></td>
+                        <td colspan="2" align="center" style="color:white" bgcolor="#0000FF"><font face="sans-serif" size="4">TRANSPORTE</font></td>
+                    </tr>
+                     <tr>
+                         <td colspan="2" align="center">
+                             <select name="formaPago">
+                                 <option>VISA</option>
+                                 <option>Contado</option>
+                                 <option>Cheque</option>
+                             </select>
+                         </td>
+                         <td colspan="2" valign="middle" >
+                             <input type="radio" name="transporte" value="domicilio" checked="checked" />Domicilio<br>
+                             <input type="radio" name="transporte" value="recogidaTienda" />Recogida en Tienda
+                         </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center" style="color:white" bgcolor="#0000FF"><font face="sans-serif" size="4">CARACTERISTICAS ESPECIALES</font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center"><textarea name="caracteristicasEsp" rows="5" cols="70"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center" style="color:white" bgcolor="#0000FF"><font face="sans-serif" size="4">DATOS DEL CLIENTE</font></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#58ACFA" align="right">Nombre </td>
+                        <td colspan="2"><input type="text" name="nombre" value="" size="40" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#58ACFA" align="right">Apellidos </td>
+                        <td colspan="2"><input type="text" name="apellidos" value="" size="40" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#58ACFA" align="right">DNI </td>
+                        <td colspan="2"><input type="text" name="dni" value="" size="40" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#58ACFA" align="right">Teléfono </td>
+                        <td colspan="2"><input type="text" name="telefono" value="" size="40" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right" bgcolor="#0000FF"><input type="submit" value="Comprar" name="comprar" /></td>
+                        <td colspan="2" align="left" bgcolor="#0000FF"><input type="reset" value="Borrar Datos" name="borrar" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
